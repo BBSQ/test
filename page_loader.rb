@@ -1,5 +1,5 @@
 # Для скачивания страниц нужно использовать библиотеку curb
-require 'crub'
+require 'curb'
 
 class PageLoader
   def initialize(url)
@@ -10,4 +10,6 @@ class PageLoader
     page = Curl.get(@url)
     page.body_str
   end
+  # need to load full page
+  # need num of pages
 end
