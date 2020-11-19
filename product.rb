@@ -1,11 +1,10 @@
 class Product
-  attr_accessor :name, :price, :image, :product_code
+  attr_accessor :name, :quantity, :price, :image
 
   def initialize(args)
     @name = args[:name]
-    @weight = args[:weight]
+    @quantity = args[:quantity]
     @price = args[:price]
     @image = args[:image]
   end
-
 end
