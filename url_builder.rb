@@ -7,7 +7,7 @@ class URLBuilder
   end
 
   def build_url
-    "#{@url}#/#{@code}-#{@parameter.gsub(/ /,"_").gsub(/Ñ/,'N').downcase}-#{@quantity.gsub(/"."/,"_").gsub(/ /,"_").gsub("(","").gsub(")","").downcase}"
+    "#{@url}#/#{@code}-#{@parameter.gsub(/ /,"_").downcase}-#{@quantity.gsub(/"."/,"_").gsub(/ /,"_").gsub("(","").gsub(")","").downcase}"
   end
 
 end
