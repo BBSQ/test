@@ -38,7 +38,7 @@ class ResultFileWriter
 
   def check_file
     if File.file?(@file)
-      puts Time.now.to_s + "#{@file} updated"
+      puts Time.now.to_s + " #{@file} updated"
     end
   end
 end
